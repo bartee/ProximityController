@@ -1,0 +1,20 @@
+ProximityController
+  
+UI directive controller
+The cursors' position from the targets' center, and its proximity towards it, determines the controllers' value
+Instantiate with target id and options-object. 
+
+Initially developed for PrototypeJS v.1.6
+
+Contents: 
+- ProximityController - the base class
+	The magic should happen in the execute-method; since this is the base class, there's no magic here yet :-)
+- AutoScroller - implementation for controlling x and y scroll using proximity to the target's center.
+	
+Instantiation: 
+ - id: target element's ID
+ - options: object
+	control_factor: {x, y}. Used for determining the controllers' sensitivity
+	interval : in seconds
+	active: x, y or both
+
